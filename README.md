@@ -4,11 +4,9 @@ Official GitHub repository of the MCBling MSN program.
 MCB MSN Status: 🚧 Work in Progress (W.I.P) — Open Code! Coming Soon
 
 # 1.INTRODUCTION
-MCBling MSN (abbreviated as MCB MSN) is an entirely original program created by Spanish developer Michael de la Emera, with the assistance of OpenAI’s ChatGPT.
 
-This project is a fully OSC (Open Source Community) initiative: it has no central authority or single owner, but is instead built collaboratively by the community for the community.
-
-MCBling MSN is currently in its early stages of development. The goal is to bring back the essence of Microsoft’s classic Windows Live Messenger, while reimagining it with its own unique style inspired by the nostalgic MCBling aesthetic.
+MCBling MSN (MCB MSN) is an original program built from scratch by Michael de la Emera with the assistance of OpenAI’s ChatGPT.
+It recreates the nostalgic experience of Microsoft’s Windows Live Messenger, but with its own unique style inspired by the MCBling aesthetic.
 
 # 2.FEATURES
 
