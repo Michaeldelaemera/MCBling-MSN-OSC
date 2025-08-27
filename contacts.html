@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MSN Revival - Contactos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --pink:#ff99cc; --pink-soft:#ffd6e8;
+      --glass-bg:rgba(255,255,255,.18); --glass-brd:rgba(255,255,255,.35);
+    }
+    body {
+      margin:0; height:100vh; display:flex; flex-direction:column;
+      background:linear-gradient(135deg,var(--pink),var(--pink-soft));
+      font-family:Segoe UI,Arial,sans-serif; color:#222;
+    }
+    header { text-align:center; padding:20px; }
+    h1 {
+      margin:8px 0; font-size:24px;
+      background:linear-gradient(to top,#ff66b2,#fff);
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+      text-shadow:1px 1px 2px rgba(0,0,0,.25);
+    }
+    main {
+      flex:1; display:flex; justify-content:center; align-items:flex-start; gap:20px;
+      flex-wrap:wrap; padding:20px;
+    }
+    .glass {
+      background:var(--glass-bg); border:1px solid var(--glass-brd);
+      border-radius:16px; padding:20px; backdrop-filter:blur(8px);
+      box-shadow:0 6px 12px rgba(0,0,0,.25); width:300px;
+    }
+    h2 { margin:0 0 10px; font-size:18px; text-align:center; }
+    input,textarea {
+      width:100%; margin:6px 0; padding:10px;
+      border-radius:10px; border:1px solid var(--glass-brd);
+      background:rgba(255,255,255,.65); font-size:14px;
+    }
+    textarea { resize:none; height:60px; }
+    button {
+      width:100%; padding:10px; margin-top:8px;
+      border-radius:10px; border:1px solid #666; cursor:pointer;
+      background:linear-gradient(to bottom,#fefefe,#dcdcdc);
+      box-shadow:inset 0 1px 0 #fff;
+    }
+    button:hover { background:linear-gradient(to bottom,#fff,#ccc); }
+    .avatar { width:80px; height:80px; border-radius:50%; object-fit:cover; margin-bottom:10px; }
+    #nicknameDisplay { display:block; text-align:center; font-weight:bold; margin:6px 0; }
+    footer { text-align:center; padding:10px; font-size:12px; opacity:.8; }
+    footer a { color:#222; text-decoration:none; font-weight:bold; }
+    footer a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mis Contactos</h1>
+  </header>
+
+  <main>
+    <div class="glass">
+      <h2>Mi Perfil</h2>
+      <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar">
+      <span id="nicknameDisplay">usuario@revival.com</span>
+
+      <input type="text" placeholder="URL de foto de perfil">
+      <input type="text" placeholder="Nickname">
+      <input type="text" placeholder="Estado">
+      <textarea placeholder="Biografía"></textarea>
+      <button>Guardar cambios</button>
+      <button onclick="window.location.href='index.html'">Cerrar sesión</button>
+    </div>
+
+    <div class="glass">
+      <h2>Contactos</h2>
+      <input type="text" placeholder="usuario@revival.com">
+      <button onclick="window.location.href='chat.html'">Añadir contacto</button>
+      <div id="contactsList">
+        <p>No tienes contactos todavía.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © Insert your copyright — 
+  </footer>
+</body>
+</html>
